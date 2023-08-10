@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;600&family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/myTicketStyle.css">
+    <title>TICKETS AGAIN</title>
+</head>
+<body>
+
+    <div class="main-content">
+
+        <div class="top-content">
+            <div class="title">
+                Create Ticket
+            </div>
+
+            <div class="button"><a href="/createTicket">Create Tickets</a></div>
+
+            <div class="button"> <a href="/viewTicket">View Tickets</a></div>
+        </div>
+
+        <div class="lower-content">
+            
+            <!-- <div class="green-notifications"> Your ticket has been created. Ticket No:23 </div> -->
+
+            <!-- <div class="red-notifications"> Technical Error. Please try again later. </div> -->
+
+           <% if(itWorked === true){ %>
+                <div class="green-notifications"> <%= notification %> </div>
+           <% } else if(itWorked === false) {%>
+                <div class="red-notifications"> Technical Error. Please try again later. </div>
+                <% } else { %>
+    
+                        <div></div>
+              <%  } %>
+
+        </div>
+
+        <div class="middle-content">
+            
+            <form action="/createTicket" method="post" class="create-ticket-form">
+                
+                <input type="text" name="userName" id="name" placeholder="Your name here" class="theInput">
+                <input type="email" name="userEmail" id="email" placeholder="Your email here" class="theInput">
+                <input type="date" name="userDate" id="date" class="theInput">
+                <textarea name="userDescription" id="description" cols="50" rows="10" placeholder="Your comment here" class="theTextInput"></textarea>
+
+                <button class="button" name="formButton" value="reset">Reset</button>            
+                <button class="button" name="formButton" value="submit">Submit</button>
+
+                
+            </form>
+
+        </div>
+
+
+        
+
+    </div>
+    
+</body>
+</html>

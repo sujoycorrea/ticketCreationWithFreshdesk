@@ -1,0 +1,144 @@
+/* font-family: 'Noto Sans', sans-serif;
+font-family: 'Rubik', sans-serif; */
+
+
+body{
+    background-color: #A1CCD1;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.top-content{
+    margin-top:15px;
+    background-color: #F6F4EB;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+
+}
+
+.title{
+    font-family: 'Rubik', sans-serif;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.middle-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    width: 80%;
+    padding: 20px;
+}
+
+.button{
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.3em;
+    font-weight: 200;
+    background-color: #4682A9;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+}
+
+.button:active{
+    /* cursor: pointer; */
+    background-color: #749BC2;
+}
+
+.lower-content{
+    margin-top: 20px;
+}
+
+.footer{
+    font-family: 'Rubik', sans-serif;
+    font-size: 1em;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* CREATE TICKET */
+
+.create-ticket-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    padding: 20px;
+    background-color: #F6F4EB;
+    width: 80%;
+}
+
+.theInput{
+    width: 90%;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.theTextInput{
+    width: 90%;
+    height:150px;
+    border-radius: 10px;
+}
+
+.green-notifications{
+    background-color: #45bf57;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 1em;
+    font-family: 'Rubik', sans-serif;
+}
+
+.red-notifications{
+    background-color: #bf5145;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 1em;
+    font-family: 'Rubik', sans-serif;
+    /* font-weight: 200; */
+}
+
+
+/* VIEW TICKETS */
+
+.the-ticket{
+    background-color: #F6F4EB;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 10px;
+    width: 200px
+}
+
+.content{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1em;
+}
+
+.link{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 0.8em;
+    background-color: #4682A9;
+    width:100px;
+    border-radius: 5px;
+    padding: 3px;
+    color: whitesmoke;
+}
+
+.link:active{
+    background-color: #749BC2;
+}
